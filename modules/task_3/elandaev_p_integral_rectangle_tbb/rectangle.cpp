@@ -95,7 +95,6 @@ double RecIntTbb(std::vector<double> start,
         }
         countTrial *= point[i].size();
     }
-    double sum = 0.0;
     std::vector<int> B(start.size());
     for (int i = 0; i < size; i++) {
         B[i] = 0;
