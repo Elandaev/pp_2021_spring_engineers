@@ -95,7 +95,7 @@ TEST(INTEGRAL, Integral_func_4_v2_tbb) {
     ASSERT_NEAR(-0.276417, RecIntTbb(start, end, f4, step), 0.1);
 }
 
-//TEST(INTEGRAL, Integral_func_5_omp) {
+// TEST(INTEGRAL, Integral_func_5_omp) {
 //    std::vector<double> start = {0};
 //    std::vector<double> end = {12};
 //    double step = 0.0003;
@@ -109,7 +109,7 @@ TEST(INTEGRAL, Integral_func_7_tbb) {
     ASSERT_NEAR(0.9375, RecIntTbb(start, end, f7, step), 0.1);
 }
 
-//TEST(INTEGRAL, Integral_func_6_omp) {
+// TEST(INTEGRAL, Integral_func_6_omp) {
 //    std::vector<double> start = {1, 1, 0};
 //    std::vector<double> end = {2, 1.6, 3};
 //    double step = 0.01;
@@ -118,7 +118,7 @@ TEST(INTEGRAL, Integral_func_7_tbb) {
 
 
 
-//TEST(INTEGRAL, Integral_func_5) {
+// TEST(INTEGRAL, Integral_func_5) {
 //    std::vector<double> start = {0};
 //    std::vector<double> end = {12};
 //    double step = 0.0003;
@@ -144,7 +144,7 @@ TEST(INTEGRAL, Integral_func_7) {
     ASSERT_NEAR(0.9375, RecIntTbb(start, end, f7, step), 0.1);
 }
 
-//TEST(INTEGRAL, Integral_func_6) {
+// TEST(INTEGRAL, Integral_func_6) {
 //    std::vector<double> start = {1, 1, 0};
 //    std::vector<double> end = {2, 1.6, 3};
 //    double step = 0.01;
