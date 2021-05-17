@@ -1,7 +1,6 @@
 // Copyright 2021 Elandaev Pavel
 
 #include "../../modules/task_3/elandaev_p_integral_rectangle_tbb/rectangle.h"
-#include <omp.h>
 #include <tbb/tbb.h>
 
 // double RectangleIntegral(double start, double end, std::function<double(double)> f, double step) {
