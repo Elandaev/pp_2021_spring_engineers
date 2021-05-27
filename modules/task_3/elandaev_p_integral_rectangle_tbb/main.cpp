@@ -1,6 +1,6 @@
 // Copyright 2021 Elandaev Pavel
-#include <gtest/gtest.h>
 #include <math.h>
+#include <gtest/gtest.h>
 #include "../../modules/task_3/elandaev_p_integral_rectangle_tbb/rectangle.h"
 #include <tbb/tick_count.h>
 
