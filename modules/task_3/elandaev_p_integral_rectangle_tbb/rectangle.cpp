@@ -86,6 +86,5 @@ double RecIntTbb(std::vector<double> start,
             }
             return loc_res;
     }, std::plus<double>() );
-    
-    return sum * step[0]; // (std::pow(step[0], size));
+    return sum * step[0];
 }
