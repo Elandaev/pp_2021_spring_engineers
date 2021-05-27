@@ -2,7 +2,7 @@
 #include <gtest/gtest.h>
 #include <math.h>
 #include "../../modules/task_3/elandaev_p_integral_rectangle_tbb/rectangle.h"
-// #include <tbb/tick_count.h>
+#include <tbb/tick_count.h>
 
 double f1(const std::vector<double> &x) {
     double res = 10;
