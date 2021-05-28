@@ -1,8 +1,8 @@
 // Copyright 2021 Elandaev Pavel
-#include "../../modules/task_3/elandaev_p_integral_rectangle_tbb/rectangle.h"
 #include <math.h>
 #include <gtest/gtest.h>
 #include <tbb/tick_count.h>
+#include "../../modules/task_3/elandaev_p_integral_rectangle_tbb/rectangle.h"
 
 double f1(const std::vector<double> &x) {
     double res = 10;
