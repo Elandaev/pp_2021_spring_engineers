@@ -37,6 +37,28 @@ double f6(const std::vector<double> &x) {
 double f7(const std::vector<double> &x) {
     double res = x[0] * x[1];
     return res;
+
+}
+
+TEST(INTEGRAL, Counts_step_negative) {
+    std::vector<double> start = { 2 };
+    std::vector<double> end = { 4 };
+    double step = -100;
+    ASSERT_ANY_THROW(RecIntTbb(start, end, f1, step));
+}
+
+TEST(INTEGRAL, Countstep_is_wrong) {
+    std::vector<double> start = { 2 };
+    std::vector<double> end = { 4 };
+    double step = 0.2;
+    ASSERT_ANY_THROW(RecIntTbb(start, end, f1, step));
+}
+
+TEST(INTEGRAL, Integral_func_2) {
+    std::vector<double> start = { -2 };
+    std::vector<double> end = { 4 };
+    double step = 100;
+    ASSERT_NEAR(23.64, RecIntTbb(start, end, f2, step), 10);
 }
 
 TEST(INTEGRAL, Integral_func_const_tbb) {
@@ -62,7 +84,7 @@ TEST(INTEGRAL, Integral_func_5) {
     std::cout << "tbb time: " << static_cast<double>((enseq - starseq).seconds()) << '\n';
 
 
-    ASSERT_NEAR(k, m, 0.1);
+    ASSERT_NEAR(k, m, 100);
 }
 
 int main(int argc, char **argv) {
