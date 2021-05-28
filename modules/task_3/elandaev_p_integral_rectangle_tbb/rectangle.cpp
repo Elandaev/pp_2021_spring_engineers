@@ -1,5 +1,6 @@
 // Copyright 2021 Elandaev Pavel
 
+#include <math.h>
 #include "../../modules/task_3/elandaev_p_integral_rectangle_tbb/rectangle.h"
 
 void iterplus(std::vector<int> *B, int it, const std::vector<std::vector<double>> &p) {
@@ -51,7 +52,7 @@ double RecInt(std::vector<double> start,
         iterplus(&B, dim, point);
         sum += f(Trial);
     }
-    return sum * (std::pow(step, dim+1));
+    return sum * pow(step, dim+1);
 }
 
 double RecIntTbb(std::vector<double> start,
@@ -70,7 +71,7 @@ double RecIntTbb(std::vector<double> start,
     for (int i = 0; i < size; i++) {
         step.push_back((end[i] - start[i]) / static_cast<double>(countstep));
     }
-    int CountTrial = std::pow(countstep, size);
+    int CountTrial = pow(countstep, size);
     double sum = 0.0;
     std::vector<double> Trial(size);
     sum = tbb::parallel_reduce(
