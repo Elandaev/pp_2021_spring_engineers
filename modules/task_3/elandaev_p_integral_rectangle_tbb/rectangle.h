@@ -2,10 +2,10 @@
 #ifndef MODULES_TASK_3_ELANDAEV_P_INTEGRAL_RECTANGLE_TBB_RECTANGLE_H_
 #define MODULES_TASK_3_ELANDAEV_P_INTEGRAL_RECTANGLE_TBB_RECTANGLE_H_
 
-#include <cmath>
-#include <vector>
 #include <utility>
+#include <vector>
 #include <functional>
+#include <cmath>
 #include <iostream>
 #include <tbb/tbb.h>
 

@@ -37,7 +37,6 @@ double f6(const std::vector<double> &x) {
 double f7(const std::vector<double> &x) {
     double res = x[0] * x[1];
     return res;
-
 }
 
 TEST(INTEGRAL, Counts_step_negative) {
